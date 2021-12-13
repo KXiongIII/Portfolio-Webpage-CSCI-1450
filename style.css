@@ -1,0 +1,464 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+i.fa{
+    font-size: 15px;
+    color:#000033;
+  }
+
+header{
+    font-family: Georgia, serif;
+    background-color: #000000;
+    color:gray;
+    max-width: fit-content;
+    height: max-content;
+}
+nav ul{ 
+    list-style-type: none;/* Navigation Bar */
+}
+nav li {  
+    display: inline; /* Puts the list items on one line */
+}
+nav a{ 
+    text-decoration: none; /*removes default underlining */ 
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #000000;  
+}
+
+/* smoke animation */
+section{
+    height: 100vh;
+    background: #000;
+}
+video{
+    object-fit: cover;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #565857;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    z-index: 1;
+}
+h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: rotate 1s linear forwards;
+}
+@keyframes rotate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+h1 span:nth-child(1){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(2){
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(3){
+    animation-delay: 2s;
+}
+h1 span:nth-child(4){
+    animation-delay: 2.25s;
+}
+h1 span:nth-child(5){
+    animation-delay: 2.5s;
+}
+h1 span:nth-child(6){
+    animation-delay: 3s;
+}
+h1 span:nth-child(7){
+    animation-delay: 3.25s;
+}
+h1 span:nth-child(8){
+    animation-delay: 3.5s;
+}
+h1 span:nth-child(9){
+    animation-delay: 4s;
+}
+
+
+/* Navigation Bar */
+nav ul{ 
+    list-style-type: none; /* removes bullets */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  nav li {  
+  display: inline; /* Puts the list items on one line */
+  box-sizing: border-box;
+  float: center;
+  }
+  
+  nav a{ 
+  text-decoration: none; /*removes default underlining */
+  margin-inline-start: 16%; 
+  }
+nav a:link{
+    color: #757475; 
+}
+nav a:visited{
+    color: #3399CC;
+}
+nav a:hover{
+    color: yellow;
+}
+nav a:active{
+    color: rgb(182, 34, 196);
+}
+
+
+
+
+/* CSS for Tablets */
+
+@media only screen and (max-width: 1024px){
+    h1{
+        font-size: 2.0em;
+    }
+}
+
+/* CSS for Smartphones */
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 1.5em;
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kao Xiong</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+    <style>
+        .example1 {
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+        }
+        .example1 h3 {
+         font-size: 3em;
+         color: rgb(63, 63, 62);
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: center;
+         /* Starting position */
+         -moz-transform:translateX(100%);
+         -webkit-transform:translateX(100%);	
+         transform:translateX(100%);
+         /* Apply animation to this element */	
+         -moz-animation: example1 15s linear infinite;
+         -webkit-animation: example1 15s linear infinite;
+         animation: example1 15s linear infinite;
+        }
+        /* Move it (define the animation) */
+        @-moz-keyframes example1 {
+         0%   { -moz-transform: translateX(100%); }
+         100% { -moz-transform: translateX(-100%); }
+        }
+        @-webkit-keyframes example1 {
+         0%   { -webkit-transform: translateX(100%); }
+         100% { -webkit-transform: translateX(-100%); }
+        }
+        @keyframes example1 {
+         0%   { 
+         -moz-transform: translateX(100%); /* Firefox bug fix */
+         -webkit-transform: translateX(100%); /* Firefox bug fix */
+         transform: translateX(100%); 		
+         }
+         100% { 
+         -moz-transform: translateX(-100%); /* Firefox bug fix */
+         -webkit-transform: translateX(-100%); /* Firefox bug fix */
+         transform: translateX(-100%); 
+         }
+        }
+        </style>
+    </header>    
+        <!-- HTML -->	
+        <div class="example1">
+        <h3>Underconstruction</h3>
+        </div>
+    <nav>
+        <ul>
+            <a href="index.html"><span>Home</span></a>
+            <a href="table.html"><span>Table</span></a>&nbsp;&nbsp;
+			<a href="forms.html"><span>Resume</span></a>&nbsp;&nbsp;
+			<a href="multimedia.html"><span>Multimedia</span></a>&nbsp;&nbsp;
+        </ul>
+    </nav>
+    <section>
+        <video src="mp4/smoke2.mp4" autoplay muted></video>
+        <h1>
+            <span>K</span>
+            <span>A</span>
+            <span>O</span>
+            <span> </span>
+            <span>X</span>
+            <span>I</span>
+            <span>O</span>
+            <span>N</span>
+            <span>G</span>
+        </h1>
+    </section>
+    <style>
+        .container {
+          height: 200px;
+          position: relative;
+          border: 3px solid green;
+        }
+        
+        .vertical-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+        </style>
+    <main>
+
+    </main>
+    <footer>
+        <nav>
+			<a href="https://saintpaul.edu" target="_blank">Saint Paul College</a>
+			<a href="cybetrttroll.g14@gmail.com" target="_blank">Email Me</a> &bull;
+			<a href="tel:17633063178">Call Me</a> &bull;
+			<a href="sms:17633063178">Text/SMS</a>
+		</nav>		
+		<small><i>Copyright © All Rights Reserved<br>
+    </footer>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="webstyle.css">
+    <style>
+        canvas {
+        border:1px solid #d3d3d3;
+        background-image:url(images/sunset.gif);
+        background-size:cover;
+        }  
+    </style>
+</head>
+  
+
+<body onload="startGame()">
+    <header>
+        <h1>Portfolio Website</h1>
+    </header>
+    <div>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>	
+                <li><a href="form.html">Sign Up</a></li>&nbsp;&nbsp;
+                <li><a href="about.html">About</a></li>&nbsp;&nbsp;
+                <li><a href="Javascript.html">Javascript</a></li>&nbsp;&nbsp;
+            </ul>
+        </nav>
+    </div> 
+<main>
+        <div id="game" >
+        <div class="game-controls">
+           <button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP WINGS</button>
+           <a href=""><button class="myButton">PLAY AGAIN</button></a>
+        </div>
+        <script>
+            var myGamePiece;
+            var myObstacles = [];
+            var myScore;
+            
+            function startGame() {
+                myGamePiece = new component(30, 30, "YELLOW", 10, 120);
+                myGamePiece.gravity = 0.05;
+                myScore = new component("30px", "Consolas", "white", 420, 40, "text");
+                myGameArea.start();
+            
+            }
+
+            
+            var myGameArea = {
+                canvas : document.createElement("canvas"),
+                start : function() {
+                    this.canvas.width = 640;
+                    this.canvas.height = 360;
+                    this.context = this.canvas.getContext("2d");
+                    var myGame = document.getElementById("game");
+                    myGame.insertBefore(this.canvas, myGame.childNodes[0]);        
+                    this.frameNo = 0;
+                    this.interval = setInterval(updateGameArea, 20);
+            },
+                clear : function() {
+                    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                }
+            }
+            
+            function component(width, height, color, x, y, type) {
+                this.type = type;
+                this.score = 0;
+                this.width = width;
+                this.height = height;
+                this.speedX = 0;
+                this.speedY = 0;
+                this.x = x;
+          this.y = y;
+          this.gravity = 0;
+          this.gravitySpeed = 0;
+          this.update = function() {
+              ctx = myGameArea.context;
+              if (this.type == "text") {
+                  ctx.font = this.width + " " + this.height;
+                  ctx.fillStyle = color;
+                  ctx.fillText(this.text, this.x, this.y);
+              } else {
+                  ctx.fillStyle = color;
+                  ctx.fillRect(this.x, this.y, this.width, this.height);
+              }
+          }
+          this.newPos = function() {
+              this.gravitySpeed += this.gravity;
+              this.x += this.speedX;
+              this.y += this.speedY + this.gravitySpeed;
+              this.hitBottom();
+          }
+          this.hitBottom = function() {
+              var rockbottom = myGameArea.canvas.height - this.height;
+              if (this.y > rockbottom) {
+                  this.y = rockbottom;
+                  this.gravitySpeed = 0;
+              }
+           }
+          this.crashWith = function(otherobj) {
+              var myleft = this.x;
+              var myright = this.x + (this.width);
+              var mytop = this.y;
+              var mybottom = this.y + (this.height);
+              var otherleft = otherobj.x;
+              var otherright = otherobj.x + (otherobj.width);
+              var othertop = otherobj.y;
+              var otherbottom = otherobj.y + (otherobj.height);
+              var crash = true;
+              if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+                  crash = false;
+              }
+              return crash;
+          }
+      }
+      
+      function updateGameArea() {
+        var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+          for (i = 0; i < myObstacles.length; i += 1) {
+              if (myGamePiece.crashWith(myObstacles[i])) {
+                  return;
+              } 
+          }
+          myGameArea.clear();
+          myGameArea.frameNo += 1;
+          if (myGameArea.frameNo == 1 || everyinterval(150)) {
+              x = myGameArea.canvas.width;
+              minHeight = 20;
+              maxHeight = 200;
+              height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+              minGap = 50;
+              maxGap = 200;
+              gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+              myObstacles.push(new component(20, height, "#333333", x, 0));
+              myObstacles.push(new component(20, x - height - gap, "#333333", x, height + gap));
+          }
+          for (i = 0; i < myObstacles.length; i += 1) {
+              myObstacles[i].x += -1;
+              myObstacles[i].update();
+          }
+          myScore.text="SCORE: " + myGameArea.frameNo;
+          myScore.update();
+          myGamePiece.newPos();
+          myGamePiece.update();
+      }
+      
+      function everyinterval(n) {
+          if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+          return false;
+      }
+      
+      function accelerate(n) {
+          myGamePiece.gravity = n;
+      }
+   </script>
+
+      
+     
+</main>
+</body>
+
+<footer>
+	<small><i>Copyright © 2021 All Rights Reserved<br> 
+<a href="k.xyoojherr@gmail.com">Kao@Xiong.com</a>
+</footer>
+</html>	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><span>Home</span></a>
+            <a href="table.html"><span>Table</span></a>&nbsp;&nbsp;
+			<a href="forms.html"><span>Resume</span></a>&nbsp;&nbsp;
+			<a href="multimedia.html"><span>Multimedia</span></a>&nbsp;&nbsp;
+        </ul>
+    </nav>
+<main>
+    <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132255.7576559219!2d-93.82201114384125!3d44.63239054364458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f60b38e05f8a9d%3A0x18c7c06742a95451!2sMinnesota&#39;s%20Largest%20Candy%20Store!5e0!3m2!1sen!2sus!4v1634580444698!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <br><iframe width="560" height="315" src="https://www.youtube.com/embed/n5lzT7Ktm3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</main>
+</body>
+
+<footer>
+	<small><i>Copyright © 2016 Pacific Trails Resort<br> 
+<a href="k.xyoojherr@gmail.com">Kao@Xiong.com</a>
+</footer>
+</html>	
