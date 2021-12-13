@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kao Xiong</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+    <style>
+        .example1 {
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+        }
+        .example1 h3 {
+         font-size: 3em;
+         color: rgb(63, 63, 62);
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: center;
+         /* Starting position */
+         -moz-transform:translateX(100%);
+         -webkit-transform:translateX(100%);	
+         transform:translateX(100%);
+         /* Apply animation to this element */	
+         -moz-animation: example1 15s linear infinite;
+         -webkit-animation: example1 15s linear infinite;
+         animation: example1 15s linear infinite;
+        }
+        /* Move it (define the animation) */
+        @-moz-keyframes example1 {
+         0%   { -moz-transform: translateX(100%); }
+         100% { -moz-transform: translateX(-100%); }
+        }
+        @-webkit-keyframes example1 {
+         0%   { -webkit-transform: translateX(100%); }
+         100% { -webkit-transform: translateX(-100%); }
+        }
+        @keyframes example1 {
+         0%   { 
+         -moz-transform: translateX(100%); /* Firefox bug fix */
+         -webkit-transform: translateX(100%); /* Firefox bug fix */
+         transform: translateX(100%); 		
+         }
+         100% { 
+         -moz-transform: translateX(-100%); /* Firefox bug fix */
+         -webkit-transform: translateX(-100%); /* Firefox bug fix */
+         transform: translateX(-100%); 
+         }
+        }
+        </style>
+    </header>    
+        <!-- HTML -->	
+        <div class="example1">
+        <h3>Underconstruction</h3>
+        </div>
+    <nav>
+        <ul>
+            <a href="index.html"><span>Home</span></a>
+            <a href="table.html"><span>Table</span></a>&nbsp;&nbsp;
+			<a href="forms.html"><span>Resume</span></a>&nbsp;&nbsp;
+			<a href="multimedia.html"><span>Multimedia</span></a>&nbsp;&nbsp;
+        </ul>
+    </nav>
+    <section>
+        <video src="mp4/smoke2.mp4" autoplay muted></video>
+        <h1>
+            <span>K</span>
+            <span>A</span>
+            <span>O</span>
+            <span> </span>
+            <span>X</span>
+            <span>I</span>
+            <span>O</span>
+            <span>N</span>
+            <span>G</span>
+        </h1>
+    </section>
+    <style>
+        .container {
+          height: 200px;
+          position: relative;
+          border: 3px solid green;
+        }
+        
+        .vertical-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+        </style>
+    <main>
+
+    </main>
+    <footer>
+        <nav>
+			<a href="https://saintpaul.edu" target="_blank">Saint Paul College</a>
+			<a href="cybetrttroll.g14@gmail.com" target="_blank">Email Me</a> &bull;
+			<a href="tel:17633063178">Call Me</a> &bull;
+			<a href="sms:17633063178">Text/SMS</a>
+		</nav>		
+		<small><i>Copyright © All Rights Reserved<br>
+    </footer>
+    
+</body>
+</html>
